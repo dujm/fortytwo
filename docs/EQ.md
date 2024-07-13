@@ -8,7 +8,7 @@ Any conflict, when it happens, a person's feelings can be exaggerated. As time p
 
 If the consequences could be dramatic, then I might need to reflect, whether there was a cause in the past. If there was, then it would make sense, there would be no point to make a fuss. Just learn from it.
 
-Following this (biased) logic, EQ could be seen as a part of Time Quotient.
+Following this logic, EQ could be seen as a part of Time Quotient.
 
 <br>
 
@@ -28,3 +28,6 @@ Following this (biased) logic, EQ could be seen as a part of Time Quotient.
 
 这样说来，情商可以被看成时间商的一部分。
 
+---
+
+July 13, 2024
