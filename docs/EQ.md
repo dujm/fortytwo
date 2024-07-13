@@ -4,9 +4,9 @@ When we talk about EQ, what are we talking about? The ability to resolve a confl
 
 Maybe to a certain extent, EQ is the ability to jump out of the moment, take a look at a conflict from the future or the past, instead from a fixed time point. 
 
-Any conflict, when it happens, a person's feelings can be exaggerated. As time passes, feelings are sedimented and turned into understanding. Generally speaking, if the consequences would be small, there is no need to argue. 
+Any conflict, when it happens, a person's feelings can be exaggerated. As time passes, feelings are sedimented and turned into understanding. Generally speaking, if the potential consequences would be small, there is really no need to argue. 
 
-If the consequences could be dramatic, then I might need to reflect, whether there was a cause in the past. If there was, then it would make sense, there would be no point to make a fuss. Just learn from it.
+If the potential consequences could be dramatic, then I might need to reflect, whether there was a cause in the past. If there was, then it would make sense, there would be also no point to make a fuss, just learn from it.
 
 Following this logic, EQ could be seen as a part of Time Quotient.
 
