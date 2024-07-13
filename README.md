@@ -1,14 +1,16 @@
 # fortytwo
 
+
 ## Setup
-### Create a conda environment (named as `fortytwo`)
+### 1. Locally: create a conda environment (named as `fortytwo`)
 ```sh
+# create an env
 conda create -n fortytwo python=3.11 
 
-# Activate env
+# activate env
 conda activate fortytwo
 
-# Install packages
+# install packages
 pip3 install -r requirements.txt
 
 # install jupyter lab and add kernel 
@@ -18,61 +20,59 @@ conda install -c conda-forge jupyterlab
 ipython kernel install --user --name=fortytwo
 ```
 
-### Create a jupyter book
-[Build your book](https://jupyterbook.org/en/stable/start/build.html)
+### 2. Locally: create a jupyter book repo (also named as `fortytwo`)
+
 ```sh
-# create a jupyter book in `docs/` (just to make things look more organized)
+# create a jupyter book
 jupyter-book create fortytwo
 
 # enter main directory
 cd fortytwo
 ```
- * add markdown files in `docs/`
+ * Add markdown files in `docs/` (just to keep files more organized)
 
- * update `_toc.yml` file according to md file names
+ * Update `_toc.yml` file according to markdown file names
 
- * update `_config.yml` repository url to `https://github.com/dujjm/dujjm.github.io`
+ * Update `_config.yml` repository url (`https://github.com/yourname/fortytwo`)
 
 
-## Deploy a book 
-### Create a repo ob github `fortytwo`
+### 3. Remote: on your Github (`yourname`), create a repo (`fortytwo`) 
 
-### Connect with github
+### 4. Locally: Deploy to Github Page (`https://github.com/yourname/fortytwo`)
+ * Connect to Github 
 ```bash
 # build book 
 jupyter-book build --all ./
 
+# push to Github
 git init 
-git remote add origin git@github.com:dujm/fortytwo.git
+git remote add origin git@github.com:yourname/fortytwo.git
 git add .
 git commit -m "initial commit"
 git push --set-upstream origin master
 ```
 
-### Page access 
- * [Jupyterbook on Github](https://jupyterbook.org/en/stable/publish/gh-pages.html)
-
+* Import documents to Github Page 
 ```bash
 pip install ghp-import
 
-# import 
-ghp-import -n -p -f -o docs/_build/html
+# use ghp-import to import documents to Github Page 
+ghp-import -n -p -f -o _build/html
 ``` 
- * Go to `https://github.com/dujm/fortytwo/settings/pages`
-  * Source: `Deploy from a branch`
-  * Branch: `gh-pages/docs`
-  * Click save 
 
- * wait 1-2 min 
- * go to `https://dujjm.github.io`
+### 5. Remote: configure a publishing source on your Github 
+ * Go to `https://github.com/yourname/fortytwo/settings/pages`
+ * Source: `Deploy from a branch`
+ * Branch: `gh-pages/root`
+ * Click save 
+ * Wait 1-2 min 
+ * Go to `yourname.github.io/fortytwo`
 
-### Save pip requirements
-```bash
-pip3 freeze > requirements.txt
-```
 
-```bash
-# generate toc
-# new version of jupyter-book
-# jupyter-book toc from-project ~/Documents/path  -f jb-book > _toc.yml
- ```
+
+---
+
+## Ref
+ * [Build your book](https://jupyterbook.org/en/stable/start/build.html)
+ * [Jupyterbook on Github](https://jupyterbook.org/en/stable/publish/gh-pages.html)
+ * [Configuring a publishing source for your GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
