@@ -13,10 +13,10 @@ conda activate fortytwo
 # install packages
 pip3 install -r requirements.txt
 
-# install jupyter lab and add kernel 
+# optional: install jupyter lab and add kernel 
 conda install -c conda-forge jupyterlab
 
-# add kernel in jupyter lab
+# optional: add kernel in jupyter lab
 ipython kernel install --user --name=fortytwo
 ```
 
@@ -29,7 +29,7 @@ jupyter-book create fortytwo
 # enter main directory
 cd fortytwo
 ```
- * Add markdown files in `docs/` (just to keep files more organized)
+ * Add markdown files in `docs/` (just to make it more organized)
 
  * Update `_toc.yml` file according to markdown file names
 
@@ -38,7 +38,7 @@ cd fortytwo
 
 ### 3. Remote: on your Github (`yourname`), create a repo (`fortytwo`) 
 
-### 4. Locally: Deploy to Github Page (`https://github.com/yourname/fortytwo`)
+### 4. Locally: deploy to Github Page (`https://github.com/yourname/fortytwo`)
  * Connect to Github 
 ```bash
 # build book 
