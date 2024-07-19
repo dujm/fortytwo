@@ -33,8 +33,19 @@ cd fortytwo
 
  * Update `_toc.yml` file according to markdown file names
 
- * Update `_config.yml` repository url (`https://github.com/yourname/fortytwo`)
+ * Optional: install a theme 
+ ```sh
+ pip install pydata-sphinx-theme
+ ```
 
+ * Update `_config.yml` 
+   * update repository url (`https://github.com/yourname/fortytwo`)
+   * Add the theme to your _config.yml file:
+   ```yml
+    sphinx:
+        config:
+            html_theme: pydata_sphinx_theme
+   ```
 
 ### 3. Remote: on your Github (`yourname`), create a repo (`fortytwo`) 
 
@@ -54,8 +65,6 @@ git push --set-upstream origin master
 
 * Import documents to Github Page 
 ```bash
-pip install ghp-import
-
 # use ghp-import to import documents to Github Page 
 ghp-import -n -p -f -o _build/html
 ``` 
